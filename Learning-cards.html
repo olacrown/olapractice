@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*utils*/
+
+        img,svg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .container-wrapper{
+            margin:1rem 2rem;
+        }
+
+        .main_image{
+            margin:.5rem .7rem;
+        }
+
+
+        .main_image .image{ 
+            height:400px;
+            width:100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 5px;
+            
+        }
+
+
+        body {
+            background-color: aqua;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            height: 100%;
+            width: 100%;
+        }
+
+        .primary_text {
+            color: black;
+            font-size: 2rem;
+            border: 2px dotted red;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .footer img {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+        }
+
+        .main_header{
+            margin:1rem 0rem;
+        }
+
+        .main_header span{
+
+            background:#d6cb2c;
+            color:#1d1d1d;
+            padding:.3rem .7rem;
+            border-radius:7px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .main_header p{
+            padding-top:1rem;
+            font-weight:600;
+        }
+
+        .main_content{
+            margin:2rem 0rem;
+        }
+
+        .main_content p{
+            margin:1.3rem 0rem;
+            color: gray;
+        }
+
+        .footer{
+            display: flex;
+            align-items:center;
+            gap:10px;
+        }
+        .footer p{
+            font-weight:bold;
+        }
+        .main_link{
+            background-color: #d6cb2c;
+            color:#fff;
+            padding: .5rem 1rem;
+            margin-top:2rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/cards.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="main_image">
+            <img src="./assets/main.jpg" class="image"
+                alt="this is the main image">
+        </div>
+       <div class="container-wrapper">
+        <div class="main_header">
+            <span>Learning</span>
+            <p>Published 21 Dec 2025</p>
+        </div>
+        <div class="main_content">
+            <h1>HTML &amp; CSS foundations</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, fugiat eius soluta eveniet aut corporis
+                eaque nobis facere esse doloremque?
+            </p>
+            <a class="main_link" href="https://www.google.com">Learn more</a>
+        </div>
+        <footer class="footer">
+            <img src="./assets/man.jpg" class="footer-image" alt="man">
+            <p>Ola Crown</p>
+        </footer>
+       </div>
+    </section>
+
+</body>
+
+</html>
